@@ -13,7 +13,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     font-family: inter;
-    width: 330px;
+    width: 50%;
     height: 400px;
 }
 
@@ -70,7 +70,7 @@
     height: 80%;
 } */
 
-/* 
+
 @media (max-width:350px) {
     .img {
         width: 300px;
@@ -93,4 +93,4 @@
     .div {
         background-size: contain;
     }
-} */
+}
