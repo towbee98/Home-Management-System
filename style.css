@@ -1,0 +1,90 @@
+.homepage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: inter;
+    width: 50%;
+    height: 400px;
+}
+
+.welcome-message h1 {
+    font-size: 3rem;
+    width: max-content;
+    letter-spacing: -3px;
+    line-height: 2px;
+    font-family: aquae;
+    color: white;
+}
+
+.welcome-message p {
+    font-size: 1rem;
+    width: 65%;
+    font-family: opensans;
+    color: white;
+
+}
+
+.welcome-message div {
+    width: max-content;
+    height: max-content;
+}
+
+.welcome-message button {}
+
+.welcome-message button a {
+    color: white;
+
+}
+
+.welcome-message div button:hover {
+
+    cursor: pointer;
+}
+
+.welcome-message button a:hover {
+    font-weight: bold;
+}
+
+.img {
+    width: 450px;
+    height: 450px;
+}
+
+.homepage img {
+    width: 80%;
+    height: 80%;
+}
+
+@media (max-width:350px) {
+    .img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 754px) {
+    .homepage {
+        display: block;
+        height: 100vh;
+    }
+
+    .welcome-message {
+        width: 350px;
+    }
+}
+
+@media (max-width:1599px) {
+    .div {
+        background-size: contain;
+    }
+}

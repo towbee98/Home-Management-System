@@ -1,0 +1,48 @@
+html {
+    height: 150vh;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 140vh;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (min-width:280px) {
+    html {
+        height: 120vh;
+    }
+
+    .information {
+        height: 120px;
+    }
+}
+
+@media(min-width:375px) {
+    html {
+        height: 110vh;
+    }
+
+    .information {
+        height: 105vh;
+        justify-content: center;
+    }
+}
+
+@media(min-width:690px) {
+    html {
+        height: 100vh;
+    }
+
+    .information {
+        height: 85vh;
+    }
+}

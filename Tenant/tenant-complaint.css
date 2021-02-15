@@ -1,0 +1,37 @@
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+}
+
+.user-details div {
+    max-width: 750px;
+}
+
+.input-field {
+    border-bottom: none;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    box-shadow: 1px 1px 0 1px rgb(218, 213, 213);
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#detailed-description {
+    height: 100px;
+}
+
+@media(min-width:632px) {
+    .user-details {
+        height: 84vh;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="\style.css">
+    <link rel="stylesheet" href="\shared.css">
+    <link rel="stylesheet" href="\fontawesome-free-5.15.2-web\css\all.css">
+
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <link rel="stylesheet" href="tenant-account.css">
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script>
+        $(function () {
+            $(".datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script> -->
+</head>
+
+<body>
+    <!-- navbar Starts here -->
+    <nav>
+        <div class="toggle-btn">
+            <div class="toggle line-1"></div>
+            <div class="toggle line-2"></div>
+            <div class="toggle line-3"></div>
+        </div>
+        <div class="logo"><a href="\index.html">HMS</a></div>
+        <div class="Status">
+            <div class="role">Tenant</div>
+            <div class="image"><i class="fas fa-user fa-lg"></i></div>
+            <button class="log-out"><a href="\signIn.html">Log Out</a></button>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+    <!-- sidebar starts here -->
+    <div class="main-nav">
+        <a class="list-group-item" href="index.html"><i class="fas fa-tachometer-alt  fa-fw"
+                aria-hidden="true"></i>&nbsp;
+            Menu</a>
+        <a class="list-group-item  " href="tenant-account.html"><i class="fas fa-file-contract  fa-fw"
+                aria-hidden="true"></i>&nbsp;
+            Account</a>
+        <a class="list-group-item active-item" href="#"><i class="fas fa-home  fa-fw" aria-hidden="true"></i>&nbsp;
+            House</a>
+        <a class="list-group-item" href="tenant-payment.html"><i class="fas fa-money-check-alt  fa-fw"
+                aria-hidden="true"></i>&nbsp;
+            Make Payment</a>
+        <a class="list-group-item" href="tenant-complaint.html"><i class="fas fa-print  fa-fw"
+                aria-hidden="true"></i>&nbsp;
+            Complaint</a>
+        <a class="list-group-item" href="#"><i class="fas fa-city  fa-fw" aria-hidden="true"></i>&nbsp;
+            Property market</a>
+    </div>
+    <!-- side bar ends here -->
+
+    <section class="dashboard">
+        <!-- Side menu bar starts-->
+        <div class="list-group">
+            <a class="list-group-item " href="index.html"><i class="fas fa-tachometer-alt  fa-fw"
+                    aria-hidden="true"></i>&nbsp;
+                Menu</a>
+            <a class="list-group-item " href="tenant-account.html"><i class="fas fa-file-contract  fa-fw"
+                    aria-hidden="true"></i>&nbsp;
+                Account</a>
+            <a class="list-group-item active-item" href="#"><i class="fas fa-home  fa-fw" aria-hidden="true"></i>&nbsp;
+                House</a>
+            <a class="list-group-item" href="tenant-payment.html"><i class="fas fa-money-check-alt  fa-fw"
+                    aria-hidden="true"></i>&nbsp;
+                Make Payment</a>
+            <a class="list-group-item" href="tenant-complaint.html"><i class="fas fa-print  fa-fw"
+                    aria-hidden="true"></i>&nbsp;
+                Complaint</a>
+            <a class="list-group-item" href="#"><i class="fas fa-city  fa-fw" aria-hidden="true"></i>&nbsp;
+                Property market</a>
+        </div>
+        <!-- Side menu  ends here-->
+        <div class="user-details">
+
+            <form action="" method="post">
+                <div>
+                    <div class="input-field">
+                        <label for="apartment ID">Apartment ID:</label>
+                        <input type="text" name="apartment-id" id="apartment-id" disabled="disabled">
+
+                    </div>
+                    <div class="input-field">
+                        <label for="house-owner-phone">House Owner Phone number:</label>
+                        <input type="text" name="house-owner-phone" id="house-owner-phone" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="house-owner">House-Owner:</label>
+                        <input type="text" name="house-owner" id="house-owner" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-type-id">Apartment Type ID:</label>
+                        <input type="text" name="apartment-type-id" id="apartment-type-id" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-number">Apartment Number:</label>
+                        <input type="text" name="apartment-number" id="apartment-number" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-type">Apartment Type:</label>
+                        <input type="text" name="apartment-type" id="apartment-type" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="register-date">Registration Date:</label>
+                        <input type="text" name="register-date" id="register-date" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="Street">Street:</label>
+                        <input type="text" name="Street" id="Street" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-description">Apartment Description:</label>
+                        <input type="text" name="apartment-descriptio" id="apartment-description" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="Rent">Rent:</label>
+                        <input type="text" name="Rent" id="rent" disabled="disabled">
+                    </div>
+                </div>
+                <div>
+                    <div class="input-field">
+                        <label for="Country">Country:</label>
+                        <input name="country" id="country" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="State">State:</label>
+                        <input name="state" id="state" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="Lga">LGA:</label>
+                        <input name="lga" id="lga" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="caution-fee">Caution Fee:</label>
+                        <input type="text" name="Caution Fee" id="Caution Fee" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="Caretaker">:Company ID:</label>
+                        <input type="text" name="caretaker" id="caretaker" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-code">Apartment Code:</label>
+                        <input type="text" name="apartment-code" id="apartment-code" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="Status">Status:</label>
+                        <input type="text" name="Status" id="status" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="latitude">Latitude:</label>
+                        <input type="text" name="latitude" id="latitude" disabled="disabled">
+                    </div>
+                    <div class="input-field">
+                        <label for="longitude">Longitude:</label>
+                        <input type="text" name="longitude" id="longitude" disabled="disabled">
+                    </div>
+                </div>
+            </form>
+            <!-- <div><button type="submit"><a href="#">Save</a></button></div> -->
+        </div>
+    </section>
+    <script src="\index.js"></script>
+</body>
+
+</html>

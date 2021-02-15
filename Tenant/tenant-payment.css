@@ -1,0 +1,43 @@
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 95vh;
+}
+
+.payment-details {
+    width: 250px;
+}
+
+.payment-details button a {
+    font-size: 1rem;
+}
+
+.payment-history {
+    height: 300px;
+    min-width: 250px;
+    text-align: center;
+    background-color: rgba(255, 250, 250, 0.4);
+    border-radius: 10px;
+}
+
+.payment-history p {
+    opacity: 0.6;
+}
+
+@media (min-width:500px) {
+    payment-details {
+        width: 50%;
+    }
+}
+
+@media(min-width:634px) {
+    .user-details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 84vh;
+    }
+}

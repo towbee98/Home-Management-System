@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="\style.css">
+    <link rel="stylesheet" href="\shared.css">
+    <link rel="stylesheet" href="\fontawesome-free-5.15.2-web\css\all.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <link rel="stylesheet" href="\Tenant\tenant-account.css">
+    <link rel="stylesheet" href="homeOwner-account.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- navbar Starts here -->
+    <nav>
+        <div class="toggle-btn">
+            <div class="toggle line-1"></div>
+            <div class="toggle line-2"></div>
+            <div class="toggle line-3"></div>
+        </div>
+        <div class="logo"><a href="\index.html">HMS</a></div>
+        <div class="Status">
+            <div class="role">Home Owner</div>
+            <div class="image"><i class="fas fa-user fa-lg"></i></div>
+            <button class="log-out"><a href="\signIn.html">Log Out</a></button>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+    <!-- sidebar starts here -->
+    <div class="main-nav">
+        <a class="list-group-item  " href="index.html"><i class="fas fa-file-contract  fa-fw"
+                aria-hidden="true"></i>&nbsp;
+            Account</a>
+        <a class="list-group-item active-item" href="#"><i class="fas fa-home  fa-fw" aria-hidden="true"></i>&nbsp;
+            Add Apartment</a>
+        <a class="list-group-item" href="homeOwner-properties.html"><i class="fas fa-money-check-alt  fa-fw"
+                aria-hidden="true"></i>&nbsp;
+            Apartments</a>
+        <a class="list-group-item" href="Complaints.html"><i class="fas fa-print  fa-fw" aria-hidden="true"></i>&nbsp;
+            Complaints</a>
+        <!-- <a class="list-group-item" href="#"><i class="fas fa-city  fa-fw" aria-hidden="true"></i>&nbsp;
+            Payments</a> -->
+    </div>
+    <!-- side bar ends here -->
+
+    <section class="dashboard">
+        <!-- Side menu bar starts-->
+        <div class="list-group">
+            <a class="list-group-item " href="index.html"><i class="fas fa-file-contract  fa-fw"
+                    aria-hidden="true"></i>&nbsp;
+                Account</a>
+            <a class="list-group-item active-item" href="#"><i class="fas fa-home  fa-fw" aria-hidden="true"></i>&nbsp;
+                Add Apartment</a>
+            <a class="list-group-item" href="homeOwner-properties.html"><i class="fas fa-money-check-alt  fa-fw"
+                    aria-hidden="true"></i>&nbsp;
+                Apartments</a>
+            <a class="list-group-item" href="Complaints.html"><i class="fas fa-print  fa-fw"
+                    aria-hidden="true"></i>&nbsp;
+                Complaints</a>
+            <!-- <a class="list-group-item" href="#"><i class="fas fa-city  fa-fw" aria-hidden="true"></i>&nbsp;
+                Payments</a> -->
+        </div>
+        <!-- Side menu  ends here-->
+        <div class="user-details">
+            <form action="" method="post">
+                <div>
+                    <div class="input-field">
+                        <label for="house-owner">House-Owner:</label>
+                        <input type="text" name="house-owner" id="house-owner" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="house-owner-phone">House Owner Phone number:</label>
+                        <input type="text" name="house-owner-phone" id="house-owner-phone" required>
+                    </div>
+                    <!-- <div class="input-field">
+                        <label for="apartment-type-id">Apartment Type ID:</label>
+                        <input type="text" name="apartment-type-id" id="apartment-type-id" required>
+                    </div> -->
+                    <div class="input-field">
+                        <label for="apartment-number">Apartment Number:</label>
+                        <input type="text" name="apartment-number" id="apartment-number" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-type">Apartment Type:</label>
+                        <!-- <input type="text" name="apartment-type" id="apartment-type" required> -->
+                        <select name="apartment-type" id="apartment">
+                            <option value="0" selected>- Select Apartment Type-</option>
+                            <option value='1'>ONE BEDROOM FLAT</option>
+                            <option value='2'>TWO BEDROOM FLAT</option>
+                            <option value="3">THREE BEDROOM FLAT</option>
+                            <option value="4">A BIG SHOP</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="register-date">Registration Date:</label>
+                        <input type="text" name="register-date" class="register-date datepicker" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="Street">Street:</label>
+                        <input type="text" name="Street" id="Street" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-description">Apartment Description:</label>
+                        <input type="text" name="apartment-descriptio" id="apartment-description" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="Rent">Rent:</label>
+                        <input type="text" name="Rent" id="rent" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="caution-fee">Caution Fee:</label>
+                        <input type="text" name="Caution Fee" id="Caution Fee" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-field">
+                        <label for="Country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="0" selected>- Select your country -</option>
+                            <option value='1'>Nigeria</option>
+                            <option value='2'>Ghana</option>
+                            <option value="3">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="State">State:</label>
+                        <select name="state" id="state">
+                            <!--onchange="toggleLGA(this)"> -->
+                            <option value="" selected="selected">- Select State -</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="Lga">LGA:</label>
+                        <select name="lga" id="lga" required>
+                            <option value="" selected="selected">- Select Lga-</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="Caretaker">Company Name:</label>
+                        <input type="text" name="caretaker" id="caretaker" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="apartment-code">Apartment Code:</label>
+                        <input type="text" name="apartment-code" id="apartment-code" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="Status">Status:</label>
+                        <input type="text" name="Status" id="status" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="latitude">Latitude:</label>
+                        <input type="text" name="latitude" id="latitude" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="longitude">Longitude:</label>
+                        <input type="text" name="longitude" id="longitude" required>
+                    </div>
+                </div>
+            </form>
+            <div><button type="submit"><a href="#">Save</a></button></div>
+        </div>
+    </section>
+    <script src="/index.js"></script>
+</body>
+
+</html>

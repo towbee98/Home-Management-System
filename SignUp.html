@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp page :👋</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="signUp.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <nav>
+        <div class="logo"><a href="index.html">HMS</a></div>
+    </nav>
+    <section>
+        <div class="form-container">
+            <h1>Sign Up</h1>
+            <form action="#" method="POST" class="signUp">
+                <div class="input-field">
+                    <input type="text" name="firstname" id="firstname" required>
+                    <label for="firstname">First Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="lastname" id="lastname" required>
+                    <label for="firstname">Last Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="username" id="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" id="email" required>
+                    <label for="firstname">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="password" required>
+                    <label for="firstname">Password</label>
+                </div>
+                <div class="input-field">
+                    <select name="role" id="role" required>
+                        <option value="0" selected>Specify what you are</option>
+                        <option value='1'>Landlord</option>
+                        <option value='2'>Tenant</option>
+                        <option value="3">Estate Officer</option>
+                    </select>
+                </div>
+                <button type="submit">
+                    <a href="/SignUp.html">Submit</a>
+                </button>
+            </form>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="signUp.js"></script>
+</body>
+
+</html>
