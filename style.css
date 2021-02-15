@@ -65,6 +65,7 @@
     height: 80%;
 }
 
+/* 
 @media (max-width:350px) {
     .img {
         width: 300px;
@@ -87,4 +88,4 @@
     .div {
         background-size: contain;
     }
-}
+} */
