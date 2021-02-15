@@ -13,7 +13,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     font-family: inter;
-    width: 50%;
+    width: 330px;
     height: 400px;
 }
 
@@ -39,7 +39,7 @@
     height: max-content;
 }
 
-.welcome-message button {}
+/* .welcome-message button {} */
 
 .welcome-message button a {
     color: white;
