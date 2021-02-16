@@ -266,8 +266,8 @@ button:hover {
         background-color: rgba(255, 255, 255, 0.5);
         height: 85vh;
         border-radius: 10px;
-        /* width: 15%; */
-        min-width: 162px;
+        width: 15%;
+        /* min-width: 162px; */
 
     }
 
