@@ -37,6 +37,12 @@ form {
     }
 }
 
+@media(min-width:469px) {
+    .information {
+        height: auto;
+    }
+}
+
 @media(min-width:690px) {
     html {
         height: 100vh;
@@ -44,5 +50,11 @@ form {
 
     .information {
         height: 89vh;
+    }
+}
+
+@media(min-width:720px) {
+    .information {
+        height: auto;
     }
 }
