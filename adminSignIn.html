@@ -3,28 +3,33 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Tenant and House Owner SignIn page</title>
-    <link rel="stylesheet" href="\fontawesome-free-5.15.2-web\css\all.css">
+    <title>SignUp page :👋</title>
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="\fontawesome-free-5.15.2-web\css\all.css">
+    <script>
+    </script>
 </head>
 
 <body>
-    <!-- <div class="bg"></div>
+    <div class="bg"></div>
     <div class="bg bg2"></div>
-    <div class="bg bg3"></div> -->
+    <div class="bg bg3"></div>
     <nav>
         <div class="logo"><a href="index.html">HMS</a></div>
     </nav>
     <section>
         <div class="illustration"><img src="SignIn-illustration.svg" alt=""></div>
         <div class="form-container">
-            <h2>Sign In </h2>
-            <span>Welcome, Please sign in to continue.</span>
+            <h2>Admin Sign In</h2>
             <form action="#" method="POST">
                 <div class="input-field">
-                    <input type="email" name="email" id="email" required>
-                    <label for="email">Email</label>
+                    <input type="text" name="coy-code" id="coy-code" required>
+                    <label for="coy-code">Coy Code</label>
+                </div>
+                <div class="input-field">
+                    <input type="username" name="username" id="username" required>
+                    <label for="username">Username</label>
                 </div>
                 <div class="input-field">
                     <input type="password" name="password" id="password" required><i class="fas fa-eye"
@@ -32,11 +37,12 @@
                     <label for="password">Password</label>
                 </div>
                 <button type="submit">
-                    <a href="/forgotPassword.html">Submit</a>
+                    <a href="/SignUp.html">Submit</a>
                 </button>
                 <div>
                     <p>Forgot your password? <a href='forgotPassword.html'>Click here</a></p>
-                    <!-- <p>Click <a href='SignUp.html'>here</a> to register</p>-->
+
+                    <!-- <p>Click <a href='SignUp.html'>here</a> to register</p> -->
                 </div>
             </form>
         </div>

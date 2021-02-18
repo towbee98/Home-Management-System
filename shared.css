@@ -24,7 +24,8 @@ html {
 /* background-color: rgb(216, 214, 214);
 } */
 body {
-    background: #09f;
+    /* background: #09f; */
+    background: #FFFFFF;
 }
 
 .bg {
@@ -111,7 +112,9 @@ nav .logo a {
     font-size: 2rem;
     font-weight: bold;
     font-family: inter;
-    color: white;
+    /* color: white; */
+    color: black;
+    letter-spacing: -3px;
 }
 
 nav .Status {
@@ -130,15 +133,23 @@ nav .Status .image {
     padding: 5px;
 }
 
+/* nav ul {
+    width: ;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
 a {
     color: white;
     text-decoration: none;
 }
 
 button {
-    font-size: 1.2rem;
-    margin-right: 10px;
-    padding: 7px;
+    font-size: 1rem;
+    margin-right: 8px;
+    padding: 6px;
     background-color: hsl(0, 0%, 0%);
     border-radius: 5px;
     border: none;
@@ -210,6 +221,12 @@ button:hover {
 .item button {
     font-size: 1rem;
     padding: 4px;
+}
+
+footer {
+    text-align: center;
+    font-family: inter;
+    opacity: 0.6;
 }
 
 @media(min-width:469px) {

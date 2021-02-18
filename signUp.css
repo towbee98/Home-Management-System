@@ -1,9 +1,21 @@
 section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+
+    justify-content: space-evenly;
     align-items: center;
     height: 90vh;
+}
+
+.illustration {
+    display: none;
+    width: 600px;
+    height: 600px;
+}
+
+.illustration img {
+    width: 95%;
+    height: 100%;
 }
 
 .form-container {
@@ -11,18 +23,23 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    background-color: rgba(238, 238, 238, 0.6);
+    /* background-color: rgba(238, 238, 238, 0.6); */
     /*box-shadow: 1px 1px gray, -1px -1px gray;*/
     width: 400px;
     border-radius: 30px;
     /*filter: drop-shadow();*/
 }
 
-.form-container h1 {
+.form-container h2,
+.form-container span {
     font-family: inter;
-    font-size: 30px;
+    /* font-size: 20px; */
     text-align: left;
     width: 100%;
+}
+
+.form-container span {
+    opacity: 0.6;
 }
 
 .form-container form {
@@ -30,6 +47,7 @@ section {
 }
 
 .input-field {
+    display: flex;
     position: relative;
     border-bottom: 2px solid;
     margin-top: 10px;
@@ -56,6 +74,7 @@ input {
     box-shadow: none;
 }
 
+/* #togglePassword {} */
 input:focus~label,
 input:valid~label {
     transform: translateY(-10px);
@@ -83,4 +102,14 @@ p {
 
 p>a {
     color: black;
+}
+
+#toggle-password:hover {
+    cursor: pointer;
+}
+
+@media(min-width: 986px) {
+    .illustration {
+        display: block;
+    }
 }

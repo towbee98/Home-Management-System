@@ -6,6 +6,7 @@ const Email = form[3].value;
 const password = form[4].value;
 const role = form[5].value;
 const submitBtn = form[6];
+
 let userData = [
   firstname,
   lastname,
