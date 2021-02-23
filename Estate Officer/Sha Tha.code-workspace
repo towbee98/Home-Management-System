@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\Budgetify Clone\\Budgetify"
+	},
+	{
+		"path": "..\\..\\devops-master-class-master"
+	},
+	{
+		"path": "..\\..\\TST Project\\Teachers-Support-Teachers"
+	},
+	{
+		"path": "..\\..\\test_app"
+	},
+	{
+		"path": "..\\..\\hms"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "House Management System"
+  }
+}

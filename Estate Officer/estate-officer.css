@@ -1,0 +1,269 @@
+li {
+    color: black;
+    font-family: inter;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+}
+
+.active-item {
+    color: #0168FB;
+}
+
+.tenant-landlord::after,
+.tenant-and-lords::after {
+    margin: 0 0 3px 3px;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    content: '';
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    transform: rotate(45deg);
+}
+
+.options li:hover {
+    cursor: pointer;
+}
+
+.tenant-dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 66px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    height: 120px;
+    list-style: none;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+}
+
+.tenant-dropdown a {
+    opacity: 0.7;
+    font-weight: normal;
+}
+
+.tenant-dropdown::before {
+    position: absolute;
+    top: -6px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-left: 0.15px solid rgba(80, 79, 79, 0.5);
+    border-top: 0.15px solid rgba(80, 79, 79, 0.5);
+    transform: rotate(45deg);
+}
+
+.user-profile {
+    position: absolute;
+    display: block;
+    /* flex-direction: column;
+    justify-content: space-evenly; */
+    top: 65px;
+    right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-top: 0; */
+    padding: 12px;
+    height: 200px;
+    width: 180px;
+    font-family: inter;
+    border-radius: 0 0 10px 10px;
+    transition: 700ms ease-in-out 1s;
+    background-color: white;
+    z-index: 2;
+}
+
+.user-profile::before {
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-left: 0.15px solid rgba(0, 0, 0, 0.2);
+    border-top: 0.15px solid rgba(0, 0, 0, 0.2);
+    transform: rotate(45deg);
+
+}
+
+.user-img {
+    background-color: rgb(187, 185, 185);
+    border-radius: 50%;
+    padding: 4px;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h6 {
+    font-size: 0.89rem;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+.role {
+    margin: 5px 0 24px 0;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-profile a {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.835rem;
+}
+
+.others {
+    display: none;
+}
+
+.content-container {
+    /* background-color: #b6b9bd; */
+    margin: 0 -5px;
+}
+
+
+
+.analysis {
+    display: grid;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* .dashboard-head {
+    display: flex;
+} */
+
+.dashboard-title {
+    font-family: inter;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 1/-1;
+    width: 100%;
+}
+
+.dashboard-title h6 {
+    font-size: 0.7rem;
+    margin-bottom: 7px;
+}
+
+.dashboard-title div {
+    font-size: 1.4rem;
+}
+
+.content-box {
+    padding: 10px;
+    margin: 10px;
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 0.15px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: inter;
+    height: 120px;
+}
+
+#revenueChart {
+    width: 100%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stats h1 {
+    font-size: 2.5rem;
+}
+
+.icon svg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation_1,
+.circle_animation_2,
+.circle_animation_3,
+.circle_animation_4 {
+    stroke-dasharray: 300;
+    /* this value is the pixel circumference of the circle */
+    stroke-dashoffset: 300;
+}
+
+.html .circle_animation_1 {
+    -webkit-animation: move_1 1s ease-out forwards;
+    animation: move_1 1s ease-out forwards;
+}
+
+.html .circle_animation_2 {
+    -webkit-animation: move_2 1s ease-out forwards;
+    animation: move_2 1s ease-out forwards;
+}
+
+.html .circle_animation_3 {
+    -webkit-animation: move_3 1s ease-out forwards;
+    animation: move_3 1s ease-out forwards;
+}
+
+.html .circle_animation_4 {
+    -webkit-animation: move_4 1s ease-out forwards;
+    animation: move_4 1s ease-out forwards;
+}
+
+@keyframes move_1 {
+    to {
+        stroke-dashoffset: 150;
+    }
+}
+
+@keyframes move_2 {
+    to {
+        stroke-dashoffset: 200;
+    }
+}
+
+@keyframes move_3 {
+    to {
+        stroke-dashoffset: 70;
+    }
+}
+
+@keyframes move_4 {
+    to {
+        stroke-dashoffset: 90;
+    }
+}
+
+@media(min-width:337px) {
+    .content {
+        padding: 0 50px;
+    }
+}
+
+@media(min-width:494px) {
+    .analysis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #revenueChart {
+        grid-column: 1/3;
+    }
+}
+
+@media(min-width:1120px) {
+    .analysis {
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
