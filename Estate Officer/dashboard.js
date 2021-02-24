@@ -149,3 +149,58 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#revenueChart"), options);
 chart.render();
+
+var details = {
+  series: [
+    { name: "Rent Collected", data: [44, 55, 41, 54, 22] },
+    { name: "Late Rent", data: [53, 32, 33, 52, 13] },
+  ],
+  chart: {
+    type: "bar",
+    height: 400,
+    toolbar: {
+      show: true,
+      tools: {
+        download: false,
+      },
+    },
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: false,
+    offsetX: 0,
+    style: {
+      fontSize: "12px",
+      colors: ["#fff"],
+    },
+  },
+  title: {
+    text: "Monthly Rent Collected",
+    align: "left",
+  },
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  xaxis: {
+    categories: ["Oct", "Nov", "Dec", "Jan", "Feb"],
+  },
+  // legend: {
+  //   position: "top",
+  //   horizontalAlign: "right",
+  //   floating: true,
+  //   offsetY: -25,
+  //   offsetX: -10,
+  // },
+};
+
+var chart2 = new ApexCharts(document.querySelector("#monthly-rent"), details);
+chart2.render();
