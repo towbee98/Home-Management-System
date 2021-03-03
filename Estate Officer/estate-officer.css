@@ -133,9 +133,6 @@ h6 {
 
 
 .analysis {
-    display: grid;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
     grid-template-columns: repeat(1, 1fr);
 }
 
@@ -181,6 +178,76 @@ h6 {
 
 #monthly-rent {
     width: 100%
+}
+
+#maintenance-request {
+    font-family: inter;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px;
+    grid-gap: 10px;
+}
+
+.maintenance-title {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maintenance-title h2 {
+    font-size: 0.7rem;
+}
+
+.maintenance-title h6 {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+#maintenance-request .title {
+    font-size: 0.62rem;
+    font-weight: bold;
+}
+
+.col-1 {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    font-size: 0.69rem;
+}
+
+.profile-details p {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.profile-img {
+    background-color: rgb(187, 185, 185);
+    border-radius: 50%;
+    padding: 4px;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.col-3 .low {
+    background-color: #aee2f0;
+    padding: 1px 5px;
+    font-size: 0.55rem;
+    color: #0c4f61;
+}
+
+.col-3 .medium {
+    background-color: #9ae0b7;
+    padding: 1px 5px;
+    font-size: 0.55rem;
+    color: #128607;
 }
 
 .stats {
@@ -251,15 +318,24 @@ h6 {
     }
 }
 
-@media(min-width:337px) {
-    .content {
+@media(min-width:377px) {
+    /* .content {
         padding: 0 50px;
-    }
+    } */
 }
 
 @media(min-width:494px) {
     .analysis {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        padding: 0 50px;
+    }
+
+    #maintenance-request .title {
+        font-size: 0.82rem;
     }
 
     #revenueChart {
@@ -269,6 +345,11 @@ h6 {
     #monthly-rent {
         grid-column: 1/3;
     }
+
+    .maintenance-title h2 {
+        font-size: 1rem;
+    }
+
 }
 
 @media(min-width:1120px) {
@@ -279,4 +360,6 @@ h6 {
     #monthly-rent {
         grid-column: 3/-1;
     }
+
+
 }
